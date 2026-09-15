@@ -2,11 +2,11 @@ public class Main {
     public static void main(String[] args) {
         //utilizando el constructor sin parámetros
         Estudiante estudiante1 = new Estudiante();
-        estudiante1.setNombre("Juan");
-        estudiante1.setApellido("Lopez");
-        estudiante1.setEdad(21);
-        estudiante1.setCarrera("Ingeniería");
-        estudiante1.setPromedio(8.5);
+        estudiante1.nombre = "Juan";
+        estudiante1.apellido = "Lopez";
+        estudiante1.edad = 21;
+        estudiante1.carrera = "Ingeniería";
+        estudiante1.promedio = 8.5;
 
         //utilizando el constructor con parámetros
         Estudiante estudiante2 = new Estudiante("Maria", "Gómez", 25, "Medicina", 9.0);
@@ -22,8 +22,8 @@ public class Main {
         System.out.println("--- LISTA DE ESTUDIANTES Y PROMEDIOS ---");
         for (int i = 0; i < listaEstudiantes.length; i++) {
             //operador punto (.)
-            System.out.println("Estudiante: " + listaEstudiantes[i].getNombre() + " " + listaEstudiantes[i].getApellido() + 
-                               " | Promedio: " + listaEstudiantes[i].getPromedio());
+            System.out.println("Estudiante: " + listaEstudiantes[i].nombre + " " + listaEstudiantes[i].apellido + 
+                               " | Promedio: " + listaEstudiantes[i].promedio);
         }
     }
 }
